@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Satisfacción - EKLIPSE</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 2rem;
+      background-color: #925aae;
+    }
+    h1 {
+      color: #ffffff;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1.2rem;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+    <h1>Encuesta de Satisfacción - EKLIPSE</h1>
+  <form action="https://formsubmit.co/sara.garcia.csq@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nueva respuesta de encuesta EKLIPSE">
+    
+
+    <!-- Datos generales -->
+    <div>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="compras_previas">¿Has comprado anteriormente en EKLIPSE?</label>
+        <select id="compras_previas" name="compras_previas">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="conocimiento">¿Cómo supiste de EKLIPSE?</label>
+        <input type="text" id="conocimiento" name="conocimiento">
+    </div>
+
+    <!-- Experiencia de compra -->
+    <div>
+        <label for="facilidad_navegacion">¿Te resultó fácil encontrar el producto?</label>
+        <select id="facilidad_navegacion" name="facilidad_navegacion">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="informacion_producto">¿La información sobre el producto fue clara y suficiente?</label>
+        <select id="informacion_producto" name="informacion_producto">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="proceso_pago">¿Qué te pareció el proceso de pago?</label>
+        <input type="text" id="proceso_pago" name="proceso_pago">
+    </div>
+    
+    <!-- Servicio de entrega -->
+    <div>
+        <label for="tiempo_entrega">¿Recibiste tu pedido dentro del plazo prometido?</label>
+        <select id="tiempo_entrega" name="tiempo_entrega">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="presentacion_paquete">¿Te pareció adecuada la presentación del paquete?</label>
+        <select id="presentacion_paquete" name="presentacion_paquete">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="seguimiento">¿Tuviste acceso a un sistema de seguimiento del pedido?</label>
+        <select id="seguimiento" name="seguimiento">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="calificacion_entrega">¿Cómo calificarías la experiencia global de entrega?</label>
+        <select id="calificacion_entrega" name="calificacion_entrega">
+            <option value="1">1 - Muy mala</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 - Excelente</option>
+        </select>
+    </div>
+    
+    <!-- Devoluciones -->
+    <div>
+        <label for="devolucion">¿Has tenido que devolver o cambiar algún objeto?</label>
+        <select id="devolucion" name="devolucion">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="valoracion_devolucion">¿Cómo valorarías el proceso de devolución?</label>
+        <input type="text" id="valoracion_devolucion" name="valoracion_devolucion">
+    </div>
+    
+    <!-- Atención al cliente -->
+    <div>
+        <label for="respuesta_cliente">¿Recibiste respuesta rápida a tus consultas?</label>
+        <select id="respuesta_cliente" name="respuesta_cliente">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="canal_contacto">¿Qué canal usaste para contactar?</label>
+        <input type="text" id="canal_contacto" name="canal_contacto">
+    </div>
+    <!-- Satisfacción global -->
+    <div>
+        <label for="recomendacion">¿Qué probabilidad hay de que recomiendes EKLIPSE a un amigo?</label>
+        <select id="recomendacion" name="recomendacion">
+            <option value="1">1 - Nada probable</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10 - Muy probable</option>
+        </select>
+
+        <label for="volverias">¿Volverías a comprar en EKLIPSE?</label>
+        <select id="volverias" name="volverias">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    
+    <!-- Pregunta abierta -->
+    <div>
+        <label for="comentarios">¿Hay algo más que quieras compartir sobre tu experiencia con EKLIPSE?</label>
+        <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+    </div>
+    <br>
+    <input type="submit" value="Enviar encuesta">
+  </form>
+</body>
+</html>
